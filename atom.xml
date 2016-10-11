@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://weqeo.com/"/>
-  <updated>2016-10-11T05:21:32.000Z</updated>
+  <updated>2016-10-11T05:46:47.000Z</updated>
   <id>http://weqeo.com/</id>
   
   <author>
@@ -20,15 +20,23 @@
     <link href="http://weqeo.com/2016/10/11/Hexo%E4%B8%AD%E6%92%AD%E6%94%BE%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E7%9A%84%E5%AE%9E%E8%B7%B5/"/>
     <id>http://weqeo.com/2016/10/11/Hexo中播放网易云音乐的实践/</id>
     <published>2016-10-11T05:12:02.000Z</published>
-    <updated>2016-10-11T05:21:32.000Z</updated>
+    <updated>2016-10-11T05:46:47.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong>需求：想在博客中添加一个个人的音乐播放器，不是自动播放的，用户点击可以播放。</strong></p>
 <h3 id="具体步骤："><a href="#具体步骤：" class="headerlink" title="具体步骤："></a>具体步骤：</h3><h4 id="获取网易云音乐插件外链"><a href="#获取网易云音乐插件外链" class="headerlink" title="获取网易云音乐插件外链"></a>获取网易云音乐插件外链</h4><ul>
-<li>找到选中的歌的地址：</li>
-<li><img src="https://ooo.0o0.ooo/2016/10/11/57fc76bf4e77a.png" alt="Image 2016-10-11 at 11.50.29 上午.png"></li>
-<li>获取外链，选择是否播放模式</li>
-<li><img src="https://ooo.0o0.ooo/2016/10/11/57fc761ebb660.png" alt="粘贴图片.png"></li>
+<li><strong>找到选中的歌的地址：</strong><br><img src="https://ooo.0o0.ooo/2016/10/11/57fc76bf4e77a.png" alt="Image 2016-10-11 at 11.50.29 上午.png"></li>
+<li><strong>获取外链，选择是否播放模式</strong><br><img src="https://ooo.0o0.ooo/2016/10/11/57fc761ebb660.png" alt="粘贴图片.png"></li>
 </ul>
+<h4 id="将外链插入到hexo-themes-next-layout中的文件中"><a href="#将外链插入到hexo-themes-next-layout中的文件中" class="headerlink" title="将外链插入到hexo/themes/next/layout中的文件中"></a>将外链插入到hexo/themes/next/layout中的文件中</h4><ul>
+<li>我选择把播放器放在sidebar里面，所以我就选择了_macro文件夹中的 <blockquote>
+<p>sidebar.swig文件，将之前复制的代码到了该文件中：<br>`<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="86" height="86" src="http://music.163.com/outchain/player?type=2&id=1286452&auto=0&height=66"></iframe></p>
+<pre><code>&lt;/section&gt;`
+</code></pre><p><img src="https://ooo.0o0.ooo/2016/10/11/57fc79e0bc744.png" alt="粘贴图片1.png"><br>*</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="最后，保存，提交。"><a href="#最后，保存，提交。" class="headerlink" title="最后，保存，提交。"></a>最后，保存，提交。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g <span class="_">-d</span></div></pre></td></tr></table></figure>
+<p>效果图如下：<br><img src="https://ooo.0o0.ooo/2016/10/11/57fc7c9c06f4e.png" alt="DingTalk20161011134528.png"></p>
 ]]></content>
     
     <summary type="html">
@@ -48,12 +56,12 @@
     <link href="http://weqeo.com/2016/10/09/%E5%85%B3%E4%BA%8EHexo%E4%B8%AD%E7%9A%84%E8%AF%AD%E8%A8%80%E5%87%BA%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     <id>http://weqeo.com/2016/10/09/关于Hexo中的语言出错的问题/</id>
     <published>2016-10-09T05:04:28.000Z</published>
-    <updated>2016-10-11T01:43:23.000Z</updated>
+    <updated>2016-10-11T05:29:12.000Z</updated>
     
     <content type="html"><![CDATA[<p>之前配置hexo的语言的时候，按照Next官方文档的方法，在站点中添加如下配置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">language: zh-Hans  //中文模式</div></pre></td></tr></table></figure></p>
 <p>但是并没有什么卵用.我之后也清除了缓存：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo clean</div></pre></td></tr></table></figure></p>
 <p>还是没有什么卵用。</p>
-<p>最后的发现，是在local模拟的时候有问题，但是推倒Github站点的时候又没毛病了，也不知道是什么原因。</p>
+<p>最后的发现，是在local模拟的时候有问题，但是推倒Github站点的时候又没毛病了。</p>
 ]]></content>
     
     <summary type="html">

@@ -356,11 +356,19 @@
           
             <p><strong>需求：想在博客中添加一个个人的音乐播放器，不是自动播放的，用户点击可以播放。</strong></p>
 <h3 id="具体步骤："><a href="#具体步骤：" class="headerlink" title="具体步骤："></a>具体步骤：</h3><h4 id="获取网易云音乐插件外链"><a href="#获取网易云音乐插件外链" class="headerlink" title="获取网易云音乐插件外链"></a>获取网易云音乐插件外链</h4><ul>
-<li>找到选中的歌的地址：</li>
-<li><img src="https://ooo.0o0.ooo/2016/10/11/57fc76bf4e77a.png" alt="Image 2016-10-11 at 11.50.29 上午.png"></li>
-<li>获取外链，选择是否播放模式</li>
-<li><img src="https://ooo.0o0.ooo/2016/10/11/57fc761ebb660.png" alt="粘贴图片.png"></li>
+<li><strong>找到选中的歌的地址：</strong><br><img src="https://ooo.0o0.ooo/2016/10/11/57fc76bf4e77a.png" alt="Image 2016-10-11 at 11.50.29 上午.png"></li>
+<li><strong>获取外链，选择是否播放模式</strong><br><img src="https://ooo.0o0.ooo/2016/10/11/57fc761ebb660.png" alt="粘贴图片.png"></li>
 </ul>
+<h4 id="将外链插入到hexo-themes-next-layout中的文件中"><a href="#将外链插入到hexo-themes-next-layout中的文件中" class="headerlink" title="将外链插入到hexo/themes/next/layout中的文件中"></a>将外链插入到hexo/themes/next/layout中的文件中</h4><ul>
+<li>我选择把播放器放在sidebar里面，所以我就选择了_macro文件夹中的 <blockquote>
+<p>sidebar.swig文件，将之前复制的代码到了该文件中：<br>`<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="86" height="86" src="http://music.163.com/outchain/player?type=2&id=1286452&auto=0&height=66"></iframe></p>
+<pre><code>&lt;/section&gt;`
+</code></pre><p><img src="https://ooo.0o0.ooo/2016/10/11/57fc79e0bc744.png" alt="粘贴图片1.png"><br>*</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="最后，保存，提交。"><a href="#最后，保存，提交。" class="headerlink" title="最后，保存，提交。"></a>最后，保存，提交。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g <span class="_">-d</span></div></pre></td></tr></table></figure>
+<p>效果图如下：<br><img src="https://ooo.0o0.ooo/2016/10/11/57fc7c9c06f4e.png" alt="DingTalk20161011134528.png"></p>
 
           
         
@@ -483,7 +491,7 @@
             <p>之前配置hexo的语言的时候，按照Next官方文档的方法，在站点中添加如下配置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">language: zh-Hans  //中文模式</div></pre></td></tr></table></figure></p>
 <p>但是并没有什么卵用.我之后也清除了缓存：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo clean</div></pre></td></tr></table></figure></p>
 <p>还是没有什么卵用。</p>
-<p>最后的发现，是在local模拟的时候有问题，但是推倒Github站点的时候又没毛病了，也不知道是什么原因。</p>
+<p>最后的发现，是在local模拟的时候有问题，但是推倒Github站点的时候又没毛病了。</p>
 
           
         
@@ -636,6 +644,7 @@
 
         
         
+
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=86 height=86 src="http://music.163.com/outchain/player?type=2&id=1286452&auto=0&height=66"></iframe>
       </section>
 
