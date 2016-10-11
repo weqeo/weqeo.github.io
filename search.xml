@@ -24,6 +24,15 @@
       <content type="html"></content>
     </entry>
     
+    <entry>
+      <title><![CDATA[关于Hexo中的语言出错的问题]]></title>
+      <url>http://weqeo.com/2016/10/09/%E5%85%B3%E4%BA%8EHexo%E4%B8%AD%E7%9A%84%E8%AF%AD%E8%A8%80%E5%87%BA%E9%94%99%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      <content type="html"><![CDATA[<h5 id="之前配置hexo的语言的时候，按照Next官方文档的方法，在站点中添加如下配置："><a href="#之前配置hexo的语言的时候，按照Next官方文档的方法，在站点中添加如下配置：" class="headerlink" title="之前配置hexo的语言的时候，按照Next官方文档的方法，在站点中添加如下配置："></a>之前配置hexo的语言的时候，按照Next官方文档的方法，在站点中添加如下配置：</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">language: zh-Hans  //中文模式</div></pre></td></tr></table></figure>
+<h5 id="但是并没有什么卵用-我之后也清除了缓存："><a href="#但是并没有什么卵用-我之后也清除了缓存：" class="headerlink" title="但是并没有什么卵用.我之后也清除了缓存："></a>但是并没有什么卵用.我之后也清除了缓存：</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo clean</div></pre></td></tr></table></figure>
+<h5 id="还是没有什么卵用。"><a href="#还是没有什么卵用。" class="headerlink" title="还是没有什么卵用。"></a>还是没有什么卵用。</h5><p>##### </p>
+]]></content>
+    </entry>
+    
   
   
 </search>
