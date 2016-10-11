@@ -12,8 +12,7 @@
 <li><strong>获取外链，选择是否播放模式</strong><br><img src="https://ooo.0o0.ooo/2016/10/11/57fc761ebb660.png" alt="粘贴图片.png"></li>
 </ul>
 <h4 id="将外链插入到hexo-themes-next-layout中的文件中"><a href="#将外链插入到hexo-themes-next-layout中的文件中" class="headerlink" title="将外链插入到hexo/themes/next/layout中的文件中"></a>将外链插入到hexo/themes/next/layout中的文件中</h4><ul>
-<li>**我选择把播放器放在sidebar里面，所以我就选择了_macro文件夹中的 <blockquote>
-<p>sidebar.swig文件，将之前复制的代码到了该文件中：</p>
+<li><strong>我选择把播放器放在sidebar里面，所以我就选择了_macro文件夹中的 sidebar.swig文件，将之前复制的代码到了该文件中：</strong><blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;iframe frameborder=<span class="string">"no"</span> border=<span class="string">"0"</span> marginwidth=<span class="string">"0"</span> marginheight=<span class="string">"0"</span> width=86 height=86 src=<span class="string">"http://music.163.com/outchain/player?type=2&amp;id=1286452&amp;auto=0&amp;height=66"</span>&gt;&lt;/iframe&gt;</div></pre></td></tr></table></figure>
 </blockquote>
 </li>
