@@ -86,25 +86,31 @@
 
 
 
-<meta name="description" content="之前配置hexo的语言的时候，按照Next官方文档的方法，在站点中添加如下配置：1language: zh-Hans  //中文模式
-但是并没有什么卵用.我之后也清除了缓存：1hexo clean
-还是没有什么卵用。
-最后的发现，是在local模拟的时候有问题，但是推倒Github站点的时候又没毛病了，也不知道是什么原因。">
+<meta name="description" content="需求：想在博客中添加一个个人的音乐播放器，不是自动播放的，用户点击可以播放。
+具体步骤：获取网易云音乐插件外链
+找到选中的歌的地址：
+
+获取外链，选择是否播放模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于Hexo中的语言出错的问题">
-<meta property="og:url" content="http://weqeo.com/2016/10/09/关于Hexo中的语言出错的问题/index.html">
+<meta property="og:title" content="Hexo中播放网易云音乐的实践">
+<meta property="og:url" content="http://weqeo.com/2016/10/11/Hexo中播放网易云音乐的实践/index.html">
 <meta property="og:site_name" content="weqeo">
-<meta property="og:description" content="之前配置hexo的语言的时候，按照Next官方文档的方法，在站点中添加如下配置：1language: zh-Hans  //中文模式
-但是并没有什么卵用.我之后也清除了缓存：1hexo clean
-还是没有什么卵用。
-最后的发现，是在local模拟的时候有问题，但是推倒Github站点的时候又没毛病了，也不知道是什么原因。">
-<meta property="og:updated_time" content="2016-10-11T01:43:23.000Z">
+<meta property="og:description" content="需求：想在博客中添加一个个人的音乐播放器，不是自动播放的，用户点击可以播放。
+具体步骤：获取网易云音乐插件外链
+找到选中的歌的地址：
+
+获取外链，选择是否播放模式">
+<meta property="og:image" content="https://cl.ly/0v0e191D1g46">
+<meta property="og:image" content="https://cl.ly/0w1D1C0B1H2F">
+<meta property="og:updated_time" content="2016-10-11T05:12:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于Hexo中的语言出错的问题">
-<meta name="twitter:description" content="之前配置hexo的语言的时候，按照Next官方文档的方法，在站点中添加如下配置：1language: zh-Hans  //中文模式
-但是并没有什么卵用.我之后也清除了缓存：1hexo clean
-还是没有什么卵用。
-最后的发现，是在local模拟的时候有问题，但是推倒Github站点的时候又没毛病了，也不知道是什么原因。">
+<meta name="twitter:title" content="Hexo中播放网易云音乐的实践">
+<meta name="twitter:description" content="需求：想在博客中添加一个个人的音乐播放器，不是自动播放的，用户点击可以播放。
+具体步骤：获取网易云音乐插件外链
+找到选中的歌的地址：
+
+获取外链，选择是否播放模式">
+<meta name="twitter:image" content="https://cl.ly/0v0e191D1g46">
 
 
 
@@ -125,10 +131,10 @@
 
 
 
-  <link rel="canonical" href="http://weqeo.com/2016/10/09/关于Hexo中的语言出错的问题/"/>
+  <link rel="canonical" href="http://weqeo.com/2016/10/11/Hexo中播放网易云音乐的实践/"/>
 
 
-  <title> 关于Hexo中的语言出错的问题 | weqeo </title>
+  <title> Hexo中播放网易云音乐的实践 | weqeo </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -291,7 +297,7 @@
             
             
               
-                关于Hexo中的语言出错的问题
+                Hexo中播放网易云音乐的实践
               
             
           </h1>
@@ -303,8 +309,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-09T13:04:28+08:00" content="2016-10-09">
-              2016-10-09
+            <time itemprop="dateCreated" datetime="2016-10-11T13:12:02+08:00" content="2016-10-11">
+              2016-10-11
             </time>
           </span>
 
@@ -333,8 +339,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/09/关于Hexo中的语言出错的问题/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/09/关于Hexo中的语言出错的问题/" itemprop="commentsCount"></span>
+                <a href="/2016/10/11/Hexo中播放网易云音乐的实践/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/11/Hexo中播放网易云音乐的实践/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -357,10 +363,13 @@
       
 
       
-        <p>之前配置hexo的语言的时候，按照Next官方文档的方法，在站点中添加如下配置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">language: zh-Hans  //中文模式</div></pre></td></tr></table></figure></p>
-<p>但是并没有什么卵用.我之后也清除了缓存：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo clean</div></pre></td></tr></table></figure></p>
-<p>还是没有什么卵用。</p>
-<p>最后的发现，是在local模拟的时候有问题，但是推倒Github站点的时候又没毛病了，也不知道是什么原因。</p>
+        <p><strong>需求：想在博客中添加一个个人的音乐播放器，不是自动播放的，用户点击可以播放。</strong></p>
+<h3 id="具体步骤："><a href="#具体步骤：" class="headerlink" title="具体步骤："></a>具体步骤：</h3><h4 id="获取网易云音乐插件外链"><a href="#获取网易云音乐插件外链" class="headerlink" title="获取网易云音乐插件外链"></a>获取网易云音乐插件外链</h4><ul>
+<li>找到选中的歌的地址：</li>
+<li><img src="https://cl.ly/0v0e191D1g46" alt="歌曲地址"></li>
+<li>获取外链，选择是否播放模式</li>
+<li><img src="https://cl.ly/0w1D1C0B1H2F" alt=""></li>
+</ul>
 
       
     </div>
@@ -386,13 +395,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/10/09/关于Hexo中的语言出错的问题/" rel="next" title="关于Hexo中的语言出错的问题">
+                <i class="fa fa-chevron-left"></i> 关于Hexo中的语言出错的问题
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/11/Hexo中播放网易云音乐的实践/" rel="prev" title="Hexo中播放网易云音乐的实践">
-                Hexo中播放网易云音乐的实践 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -407,10 +416,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/10/09/关于Hexo中的语言出错的问题/"
-     data-title="关于Hexo中的语言出错的问题"
+        <div class="ds-share flat" data-thread-key="2016/10/11/Hexo中播放网易云音乐的实践/"
+     data-title="Hexo中播放网易云音乐的实践"
      data-content=""
-     data-url="http://weqeo.com/2016/10/09/关于Hexo中的语言出错的问题/">
+     data-url="http://weqeo.com/2016/10/11/Hexo中播放网易云音乐的实践/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -440,8 +449,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/10/09/关于Hexo中的语言出错的问题/"
-           data-title="关于Hexo中的语言出错的问题" data-url="http://weqeo.com/2016/10/09/关于Hexo中的语言出错的问题/">
+      <div class="ds-thread" data-thread-key="2016/10/11/Hexo中播放网易云音乐的实践/"
+           data-title="Hexo中播放网易云音乐的实践" data-url="http://weqeo.com/2016/10/11/Hexo中播放网易云音乐的实践/">
       </div>
     
   </div>
@@ -579,7 +588,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#具体步骤："><span class="nav-number">1.</span> <span class="nav-text">具体步骤：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#获取网易云音乐插件外链"><span class="nav-number">1.1.</span> <span class="nav-text">获取网易云音乐插件外链</span></a></li></ol></li></ol></div>
             
           </div>
         </section>

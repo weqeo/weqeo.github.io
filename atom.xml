@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://weqeo.com/"/>
-  <updated>2016-10-11T01:43:23.000Z</updated>
+  <updated>2016-10-11T05:12:40.000Z</updated>
   <id>http://weqeo.com/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo中播放网易云音乐的实践</title>
+    <link href="http://weqeo.com/2016/10/11/Hexo%E4%B8%AD%E6%92%AD%E6%94%BE%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E7%9A%84%E5%AE%9E%E8%B7%B5/"/>
+    <id>http://weqeo.com/2016/10/11/Hexo中播放网易云音乐的实践/</id>
+    <published>2016-10-11T05:12:02.000Z</published>
+    <updated>2016-10-11T05:12:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>需求：想在博客中添加一个个人的音乐播放器，不是自动播放的，用户点击可以播放。</strong></p>
+<h3 id="具体步骤："><a href="#具体步骤：" class="headerlink" title="具体步骤："></a>具体步骤：</h3><h4 id="获取网易云音乐插件外链"><a href="#获取网易云音乐插件外链" class="headerlink" title="获取网易云音乐插件外链"></a>获取网易云音乐插件外链</h4><ul>
+<li>找到选中的歌的地址：</li>
+<li><img src="https://cl.ly/0v0e191D1g46" alt="歌曲地址"></li>
+<li>获取外链，选择是否播放模式</li>
+<li><img src="https://cl.ly/0w1D1C0B1H2F" alt=""></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;需求：想在博客中添加一个个人的音乐播放器，不是自动播放的，用户点击可以播放。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;具体步骤：&quot;&gt;&lt;a href=&quot;#具体步骤：&quot; class=&quot;headerlink&quot; title=&quot;具体步骤：&quot;&gt;&lt;/a&gt;具体步骤：&lt;/h
+    
+    </summary>
+    
+      <category term="Hexo相关" scheme="http://weqeo.com/categories/Hexo%E7%9B%B8%E5%85%B3/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>关于Hexo中的语言出错的问题</title>
