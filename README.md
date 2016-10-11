@@ -1,6 +1,3 @@
 ---
-###欢迎大家访问我的博客： 
-<a href="http://weqeo.com/" target="_blank" style="text-decoration: none">键盘侠老魏</a>
+###欢迎大家访问我的博客： **<a href="http://weqeo.com/" target="_blank" style="text-decoration: none">键盘侠老魏</a>**
 ---
-
-<a href="http://weqeo.com/" target="_blank">Hello, world!</a>
