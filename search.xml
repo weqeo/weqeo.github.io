@@ -4,6 +4,18 @@
   
     
     <entry>
+      <title><![CDATA[10月学习计划]]></title>
+      <url>http://weqeo.com/2016/10/19/%E6%9C%AC%E6%9C%88%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92%E5%A6%82%E4%B8%8B%EF%BC%9A/</url>
+      <content type="html"><![CDATA[<p>前段时间，因为公司和个人的各种杂事，中断了有序的学习计划。今天打算重新拾起来。</p>
+<h3 id="本月学习计划如下："><a href="#本月学习计划如下：" class="headerlink" title="本月学习计划如下："></a>本月学习计划如下：</h3><ul>
+<li>完成之前尚未完成的swift版微博的练习demo  ————目标：可以熟练替代OC项目</li>
+<li>复习熟悉JS，Html5                 ————目标：下月可以写个小demo</li>
+<li>学习Reactive Native     ———— 目标：初步理解</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Hexo中播放网易云音乐的实践]]></title>
       <url>http://weqeo.com/2016/10/11/Hexo%E4%B8%AD%E6%92%AD%E6%94%BE%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E7%9A%84%E5%AE%9E%E8%B7%B5/</url>
       <content type="html"><![CDATA[<p><strong>需求：想在博客中添加一个个人的音乐播放器，不是自动播放的，用户点击可以播放。</strong></p>
