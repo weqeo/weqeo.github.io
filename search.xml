@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title><![CDATA[移动端利用strongSwan搭建服务器]]></title>
+      <title><![CDATA[移动端利用strongSwan搭建VPN服务器]]></title>
       <url>http://weqeo.com/2016/11/08/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%88%A9%E7%94%A8strongSwan%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
       <content type="html"><![CDATA[<h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>使用strongSwan IKEv2 VPN协议搭建移动端VPN服务器，因iOS和Android支持的IKEv2协议类型不一样，所以要对iOS和Android分别使用不同的vpn配置</p>
 <h2 id="编译安装strongSwan"><a href="#编译安装strongSwan" class="headerlink" title="编译安装strongSwan"></a>编译安装strongSwan</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>从<a href="https://strongswan.org/" target="_blank" rel="external">https://strongswan.org/</a>下载最新版本strongSwan代码，并解压</p>
