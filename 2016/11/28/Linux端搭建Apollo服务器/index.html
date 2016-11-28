@@ -20,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="WEQEO"/>
+        <meta property="og:title" content="Linux端搭建Apollo服务器"/>
     
 
     <!--Open Graph Description-->
@@ -33,7 +33,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
     
 
     <!--Page Cover-->
@@ -44,7 +44,7 @@
 
     <!-- Title -->
     
-    <title>WEQEO</title>
+    <title>Linux端搭建Apollo服务器 - WEQEO</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -163,117 +163,90 @@
 
     <!-- Main Content -->
     <!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
-<header class="intro-header" style="background-image: url('/img/cover1.jpg')">
-    <div class="163music" style="float: right;position: fixed;left: 0px;bottom: 5px">
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=78 height=86 src="http://music.163.com/outchain/player?type=2&id=21171918&auto=1&height=66"></iframe>
-    </div>
+<!-- Set your background image for this header in your post front-matter: cover -->
 
+<header class="intro-header" style="background-image: url('/img/cover1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>WEQEO</h1>
-
-                    <hr class="small">
-                    <span class="subheading">我们有很多的声音而没有真理，我们来自一个良心却各自藏起。</span>
-
+                <div class="post-heading">
+                    <h1>Linux端搭建Apollo服务器</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        2016-11-28
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            
-                <div class="post-preview">
-    <a href="/2016/11/28/Linux端搭建Apollo服务器/">
-        <h2 class="post-title">
-            Linux端搭建Apollo服务器
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2016-11-28
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2016/11/08/移动端利用strongSwan搭建服务器/">
-        <h2 class="post-title">
-            移动端利用strongSwan搭建VPN服务器
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2016-11-08
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2016/10/19/10月学习计划/">
-        <h2 class="post-title">
-            10月学习计划
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2016-10-19
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2016/10/11/Hexo中播放网易云音乐的实践/">
-        <h2 class="post-title">
-            Hexo中播放网易云音乐的实践
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2016-10-11
-    </p>
-</div>
-<hr>
-            
-                <div class="post-preview">
-    <a href="/2016/10/09/关于Hexo中的语言出错的问题/">
-        <h2 class="post-title">
-            关于Hexo中的语言出错的问题
-        </h2>
-        
-    </a>
-    <p class="post-meta">
-        <!-- Date and Author -->
-        
-        2016-10-09
-    </p>
-</div>
-<hr>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Apollo-mqtt-即时通讯/">#Apollo,mqtt,即时通讯</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/Apollo-mqtt-即时通讯/">Apollo,mqtt,即时通讯</a>
+
+                    
+                </div>
             
 
-            <ul class="pager">
-    
-    
-</ul>
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h3 id="第一步：下载与解压："><a href="#第一步：下载与解压：" class="headerlink" title="第一步：下载与解压："></a>第一步：下载与解压：</h3><p>下载需要的Apollo版本，在任意目录解压，如1.7.1版本<br><a href="http://activemq.apache.org/apollo/download.html" target="_blank" rel="external">点我去下载</a><br>完成后解压。</p>
+<h3 id="第二步：-创建apollo实例"><a href="#第二步：-创建apollo实例" class="headerlink" title="第二步：    创建apollo实例"></a>第二步：    创建apollo实例</h3><p>`</p>
+<h1 id="cd-var-lib"><a href="#cd-var-lib" class="headerlink" title="cd /var/lib"></a>cd /var/lib</h1><p> `</p>
+<p>创建实例：<br><code>{APOLLO_HOME}/bin/apollo create mybroker</code><br>（ps：{APOLLO_HOME}即解压后的文件夹所在位置）</p>
+<p>如果成功的话就会弹出下面这一段话：<br> <img src="https://ooo.0o0.ooo/2016/11/28/583ba0cbe2bed.png" alt="Apollo部署1.png"></p>
+<p>###第三步： 打开端口<br>上一步完成后是可以直接执行run的，但是跑起来客户端也连接不上，因为我们需要打开服务器部署的端口以及web端的控制台的端口。<br>修改/etc/sysconfig/iptables文件，</p>
+<h1 id="vi-etc-sysconfig-iptables"><a href="#vi-etc-sysconfig-iptables" class="headerlink" title="vi /etc/sysconfig/iptables"></a>vi /etc/sysconfig/iptables</h1><p>添加端口号:61613、61614、61680、61681<br>插入：<code>-A INPUT -m state --state NEW -m tcp -p tcp --dport 端口号 -j ACCEPT</code></p>
+<p>有一个需要注意的地方，如果待会儿跑起来的时候提示61613、61614两个端口已经被使用的话，那就改成62613、62614即可，步骤一样，修改Apollo服务器的端口需要在<code>/var/lib/mybroker/etc</code> 文件夹下的<code>apollo.xml</code>文件中修改,在图中如下位置，哪个端口被占用了就改哪个，同时修改后的端口也需要打开。<br> <img src="https://ooo.0o0.ooo/2016/11/28/583ba0cc09821.png" alt="Apollo部署2.png"></p>
+<p>###第四步：运行<br>执行：<code>/var/lib/mybroker/bin/apollo-broker run</code> 即可（非root 权限下加sudo）<br>看到下图即表示运行成功：<br> <img src="https://ooo.0o0.ooo/2016/11/28/583ba0cc09121.png" alt="Apollo部署3.png"></p>
+<p>第五步：登录web端的控制台，管理apollo服务端<br>如果是在Linux本机上操作的话，直接浏览器中输入<code>http://127.0.0.1:61680</code>即可；<br>如果是在远程登陆Linux进行操作的话，则需要修改配置文件中的<code>web_admin bind</code>，将<code>http://127.0.0.1:61680</code>换为<code>http://LinuxIP:61680</code>，如图：<br> <img src="https://ooo.0o0.ooo/2016/11/28/583ba0cc09d17.png" alt="Apollo部署4.png"><br>在浏览器中输入登陆地址后，会出现如下界面<br><img src="https://ooo.0o0.ooo/2016/11/28/583ba0cbf2b6c.png" alt="Apollo部署5.png"><br>默认初始账户及密码为：<code>admin&amp;password</code><br>登陆成功后：即可进入控制台进行主题添加等相关操作。<br><img src="https://ooo.0o0.ooo/2016/11/28/583ba0cc09a77.png" alt="Apollo部署6.png"></p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr />
+    <h3>Kommentare:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
-
+</article>
 
     <!-- Footer -->
     <hr />
@@ -360,7 +333,7 @@
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
