@@ -7,15 +7,13 @@
       <title><![CDATA[Linux端搭建Apollo服务器]]></title>
       <url>http://weqeo.com/2016/11/28/Linux%E7%AB%AF%E6%90%AD%E5%BB%BAApollo%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
       <content type="html"><![CDATA[<h3 id="第一步：下载与解压："><a href="#第一步：下载与解压：" class="headerlink" title="第一步：下载与解压："></a>第一步：下载与解压：</h3><p>下载需要的Apollo版本，在任意目录解压，如1.7.1版本<br><a href="http://activemq.apache.org/apollo/download.html" target="_blank" rel="external">点我去下载</a><br>完成后解压。</p>
-<h3 id="第二步：-创建apollo实例"><a href="#第二步：-创建apollo实例" class="headerlink" title="第二步：    创建apollo实例"></a>第二步：    创建apollo实例</h3><p>`</p>
-<h1 id="cd-var-lib"><a href="#cd-var-lib" class="headerlink" title="cd /var/lib"></a>cd /var/lib</h1><p> `</p>
+<h3 id="第二步：-创建apollo实例"><a href="#第二步：-创建apollo实例" class="headerlink" title="第二步：    创建apollo实例"></a>第二步：    创建apollo实例</h3><p><code># cd /var/lib</code></p>
 <p>创建实例：<br><code>{APOLLO_HOME}/bin/apollo create mybroker</code><br>（ps：{APOLLO_HOME}即解压后的文件夹所在位置）</p>
 <p>如果成功的话就会弹出下面这一段话：<br> <img src="https://ooo.0o0.ooo/2016/11/28/583ba0cbe2bed.png" alt="Apollo部署1.png"></p>
-<p>###第三步： 打开端口<br>上一步完成后是可以直接执行run的，但是跑起来客户端也连接不上，因为我们需要打开服务器部署的端口以及web端的控制台的端口。<br>修改/etc/sysconfig/iptables文件，</p>
-<h1 id="vi-etc-sysconfig-iptables"><a href="#vi-etc-sysconfig-iptables" class="headerlink" title="vi /etc/sysconfig/iptables"></a>vi /etc/sysconfig/iptables</h1><p>添加端口号:61613、61614、61680、61681<br>插入：<code>-A INPUT -m state --state NEW -m tcp -p tcp --dport 端口号 -j ACCEPT</code></p>
+<h3 id="第三步：-打开端口"><a href="#第三步：-打开端口" class="headerlink" title="第三步： 打开端口"></a>第三步： 打开端口</h3><p>上一步完成后是可以直接执行run的，但是跑起来客户端也连接不上，因为我们需要打开服务器部署的端口以及web端的控制台的端口。<br>修改/etc/sysconfig/iptables文件，<br><code># vi /etc/sysconfig/iptables</code><br>添加端口号:61613、61614、61680、61681<br>插入：<code>-A INPUT -m state --state NEW -m tcp -p tcp --dport 端口号 -j ACCEPT</code></p>
 <p>有一个需要注意的地方，如果待会儿跑起来的时候提示61613、61614两个端口已经被使用的话，那就改成62613、62614即可，步骤一样，修改Apollo服务器的端口需要在<code>/var/lib/mybroker/etc</code> 文件夹下的<code>apollo.xml</code>文件中修改,在图中如下位置，哪个端口被占用了就改哪个，同时修改后的端口也需要打开。<br> <img src="https://ooo.0o0.ooo/2016/11/28/583ba0cc09821.png" alt="Apollo部署2.png"></p>
-<p>###第四步：运行<br>执行：<code>/var/lib/mybroker/bin/apollo-broker run</code> 即可（非root 权限下加sudo）<br>看到下图即表示运行成功：<br> <img src="https://ooo.0o0.ooo/2016/11/28/583ba0cc09121.png" alt="Apollo部署3.png"></p>
-<p>第五步：登录web端的控制台，管理apollo服务端<br>如果是在Linux本机上操作的话，直接浏览器中输入<code>http://127.0.0.1:61680</code>即可；<br>如果是在远程登陆Linux进行操作的话，则需要修改配置文件中的<code>web_admin bind</code>，将<code>http://127.0.0.1:61680</code>换为<code>http://LinuxIP:61680</code>，如图：<br> <img src="https://ooo.0o0.ooo/2016/11/28/583ba0cc09d17.png" alt="Apollo部署4.png"><br>在浏览器中输入登陆地址后，会出现如下界面<br><img src="https://ooo.0o0.ooo/2016/11/28/583ba0cbf2b6c.png" alt="Apollo部署5.png"><br>默认初始账户及密码为：<code>admin&amp;password</code><br>登陆成功后：即可进入控制台进行主题添加等相关操作。<br><img src="https://ooo.0o0.ooo/2016/11/28/583ba0cc09a77.png" alt="Apollo部署6.png"></p>
+<h3 id="第四步：运行"><a href="#第四步：运行" class="headerlink" title="第四步：运行"></a>第四步：运行</h3><p>执行：<code>/var/lib/mybroker/bin/apollo-broker run</code> 即可（非root 权限下加sudo）<br>看到下图即表示运行成功：<br> <img src="https://ooo.0o0.ooo/2016/11/28/583ba0cc09121.png" alt="Apollo部署3.png"></p>
+<h3 id="第五步：登录web端的控制台，管理apollo服务端"><a href="#第五步：登录web端的控制台，管理apollo服务端" class="headerlink" title="第五步：登录web端的控制台，管理apollo服务端"></a>第五步：登录web端的控制台，管理apollo服务端</h3><p>如果是在Linux本机上操作的话，直接浏览器中输入<code>http://127.0.0.1:61680</code>即可；<br>如果是在远程登陆Linux进行操作的话，则需要修改配置文件中的<code>web_admin bind</code>，将<code>http://127.0.0.1:61680</code>换为<code>http://LinuxIP:61680</code>，如图：<br> <img src="https://ooo.0o0.ooo/2016/11/28/583ba0cc09d17.png" alt="Apollo部署4.png"><br>在浏览器中输入登陆地址后，会出现如下界面<br><img src="https://ooo.0o0.ooo/2016/11/28/583ba0cbf2b6c.png" alt="Apollo部署5.png"><br>默认初始账户及密码为：<code>admin&amp;password</code><br>登陆成功后：即可进入控制台进行主题添加等相关操作。<br><img src="https://ooo.0o0.ooo/2016/11/28/583ba0cc09a77.png" alt="Apollo部署6.png"></p>
 ]]></content>
     </entry>
     
